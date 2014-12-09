@@ -37,6 +37,6 @@ public class BankWebService {
     @WebMethod(operationName = "getIntrestRate")
     public LoanResponse getIntrestRate(@WebParam(name = "loanRequest") LoanRequest loanRequest) {
         ILoanBrokerGateway gateWay = new LoanBrokerGateway();
-        return null;
+        return gateWay.getLoanResponse(loanRequest);
     }
 }

@@ -11,7 +11,7 @@ package bank.dto;
  * @author Kaboka
  */
 public class LoanRequest {
-    public int ssn;
+    public String ssn;
     public int creditScore;
     public double loanAmount;
     public int loanDuration;
