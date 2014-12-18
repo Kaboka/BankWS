@@ -13,5 +13,5 @@ package bank.dto;
 public class LoanResponse {
     public String bankName;
     public String ssn;
-    public double interrestRate;
+    public double interestRate;
 }

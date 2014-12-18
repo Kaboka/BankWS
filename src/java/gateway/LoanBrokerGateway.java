@@ -27,7 +27,9 @@ public class LoanBrokerGateway implements ILoanBrokerGateway{
         LoanResponse response = new LoanResponse();
         response.bankName = bank.getBankName();
         response.ssn = loanRequest.ssn;
-        response.interrestRate = bank.getIntrestRate(loanRequest.loanDuration, loanRequest.loanAmount, loanRequest.creditScore);
+        response.interestRate = bank.getIntrestRate(loanRequest.loanDuration, loanRequest.loanAmount, loanRequest.creditScore);
+    
+        
         return response;
     }
     

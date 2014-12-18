@@ -20,18 +20,20 @@ public class Bank {
     
     
     public float getIntrestRate(int loanDuration, double amount, int creditScore){
-        float credit = creditScore;
-        float result = BASE_RATE + ((800 - credit)/100);
+       float credit = creditScore;
+        float result = BASE_RATE + ((801 - credit)/100);
         if(amount < 10000){
-            result += 0.5f;
+            result += 0.3f;
         }else if(amount < 100000){
-            result += 0.25f;
-        }
+            result += 0.18f;
+        }else
+            result += 0.6f;
         if(loanDuration < 180){
-            result += 2.0f;
+            result += 3.0f;
         }else if(loanDuration < 720){
-            result += 1.0f;
-        }
+            result += 1.4f;
+        }else
+            result += 4.0f;
         return result;
     }
 
